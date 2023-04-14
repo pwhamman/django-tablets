@@ -29,15 +29,11 @@ class Template(MPTTModel):
 
     DJANGO = 1
     JINJA2 = 2
+
     ENGINES = (
         (DJANGO, 'Django',),
+        (JINJA2, 'Jinja2',)
     )
-
-    if jinja2:
-        ENGINES = (
-            (DJANGO, 'Django',),
-            (JINJA2, 'Jinja2',)
-        )
 
     name = models.CharField(max_length=255)
     content = models.TextField(blank=True)

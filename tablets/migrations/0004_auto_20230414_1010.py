@@ -28,6 +28,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='template',
             name='template_engine',
-            field=models.IntegerField(choices=[(1, 'Django')], default=1, verbose_name='Template Engine'),
+            field=models.IntegerField(choices=[(1, 'Django'), (2, 'Jinja2')], default=1, verbose_name='Template Engine'),
         ),
     ]
