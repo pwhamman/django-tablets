@@ -1,5 +1,3 @@
-from __future__ import unicode_literals
-
 # Django
 from django.conf import settings
 from django.contrib import admin
@@ -24,6 +22,7 @@ class AceWidgetMixin(object):
                                          width=getattr(settings, "ACE_WIDTH", "100%"),
                                          height=getattr(settings, "ACE_HEIGHT", "300px"))
         return super(AceWidgetMixin, self).formfield_for_dbfield(db_field, **kwargs)
+
 
 class ChildInline(admin.TabularInline):
     model = Template

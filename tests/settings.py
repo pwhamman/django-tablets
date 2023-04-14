@@ -1,11 +1,10 @@
-from __future__ import unicode_literals
 
 import os
-import django
 
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.messages',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
@@ -64,7 +63,7 @@ STATIC_URL = '/static/'
 
 SECRET_KEY = 'whatever man these are tests'
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
