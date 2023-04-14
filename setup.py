@@ -54,8 +54,8 @@ CLASSIFIERS = [
 
 INSTALL_REQUIRES = [
     "django-ace",
-    "django-mptt",
-    "django-jsonfield==1.0.1",
+    "django-mptt>=0.14",
+    "django-jsonfield>=1.4.1",
 ]
 
 setup(
